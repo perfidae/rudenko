@@ -16,14 +16,15 @@ header {
   padding: 20px 10px;
 }
 
-header img{
-  width: 100px;
-}
-
 header h1 {
   margin: 0;
   font-size: 28px;
   font-weight: 700;
+}
+
+header img{
+  width: 100px;
+  height: 100px;
 }
 
 nav {
@@ -62,6 +63,14 @@ p {
   margin: 0 auto 20px;
 }
 
+/* Однаковий розмір картинок у main */
+main img {
+  width: 250px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
 /* Картки товарів */
 .products {
   display: grid;
@@ -80,11 +89,6 @@ p {
 
 .card:hover {
   transform: scale(1.03);
-}
-
-.card img {
-  max-width: 100%;
-  border-radius: 8px;
 }
 
 .card h3 {
@@ -117,7 +121,9 @@ p {
 }
 
 .gallery img {
-  width: 230px;
+  width: 250px;
+  height: 180px;
+  object-fit: cover;
   border-radius: 8px;
   box-shadow: 0 3px 8px rgba(0,0,0,0.15);
 }
@@ -180,4 +186,3 @@ footer {
 .socials img:hover {
   transform: scale(1.1);
 }
-
